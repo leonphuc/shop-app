@@ -1,0 +1,15 @@
+.sort-features {
+  border-top: 1px solid #3333333f;
+
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   justify-content: flex-end;
+  label {
+    margin-right: 10px;
+  }
+  .sort-features-select {
+    width: 40%;
+  }
+}

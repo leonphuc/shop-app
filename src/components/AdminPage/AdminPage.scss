@@ -1,0 +1,28 @@
+.admin-page-wrapper {
+  margin-top: 10px;
+  .admin-page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .admin-page-title {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .sort-header {
+    i {
+      cursor: pointer;
+    }
+  }
+}
+
+.form-control {
+  font-size: 1.6rem;
+}
+
+.tip-wrapper {
+  border: 1px solid #333;
+  text-align: center;
+  .tip-content {
+    padding: 10px 0;
+  }
+}

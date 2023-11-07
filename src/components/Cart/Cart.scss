@@ -1,0 +1,143 @@
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.cart-empty {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .continue {
+    text-decoration: none;
+    justify-self: right;
+    p {
+      color: rgb(45, 172, 245);
+      font-size: 1.6rem;
+      font-weight: 200;
+      margin: 5px 0;
+    }
+  }
+}
+
+.cart-item,
+.titles {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  column-gap: 0.5rem;
+}
+
+.titles {
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .product-total {
+    justify-self: right;
+  }
+  .product-quantity {
+    justify-self: center;
+  }
+}
+
+.cart-item {
+  border-top: 1px solid #333;
+  padding: 10px 0;
+  .cart-product {
+    display: flex;
+    .cart-product-info {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+    img {
+      width: 100px;
+      max-width: 100%;
+      margin-right: 1.6rem;
+    }
+    h3 {
+      font-weight: 400;
+    }
+    .cart-btn-remove {
+      color: gray;
+    }
+  }
+  .cart-product-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 130px;
+    max-width: 100%;
+    border: 1px solid rgba(122, 122, 122, 0.356);
+    padding: 3px 0;
+    border-radius: 5px;
+    button {
+      padding: 0 20px;
+      color: gray;
+      width: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: none;
+    }
+  }
+  .cart-product-total-price {
+    justify-self: right;
+    padding-right: 5px;
+    font-weight: 700;
+  }
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid rgba(122, 122, 122, 0.356);
+  padding-top: 20px;
+  .clear-cart-btn {
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1.15px;
+    width: 130px;
+    max-width: 100%;
+  }
+  .cart-checkout {
+    width: 270px;
+    max-width: 100%;
+    .subtotal {
+      display: flex;
+      justify-content: space-between;
+      .amount {
+        font-weight: 700;
+      }
+    }
+    .check-out {
+      width: 100%;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    p {
+      color: gray;
+      font-size: 1.4rem;
+      font-weight: 200;
+      margin: 5px 0;
+    }
+    .continue {
+      text-decoration: none;
+      justify-self: right;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+h4 {
+  text-transform: capitalize;
+  .arrow-icon {
+    padding-right: 10px;
+  }
+}
+
+.sidebar-sort-by-category {
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.category-list-item {
+  color: #333;
+  text-decoration: none;
+  &.active {
+    background-color: blue;
+    color: #e40000;
+  }
+}
